@@ -25,6 +25,13 @@ html {
     color: var(--maintextColor);
     
 }
+.skill-details h3{
+ font-family: var(--fonttwo);
+ text-align: center;
+ letter-spacing: 1.3px;
+ font-weight: 200;
+ margin-bottom: 10px;
+}
 
 .skill-details br {
     display: block; /* makes it have a width */
