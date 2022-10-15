@@ -17,13 +17,38 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+.projContainer{
+    width: 100%;
+    height: fit-content;
+    display:flex;
+    overflow-x: scroll;
+    padding: 10px  20px;
+    padding-top: 30px;
+}
+.projcard{
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    background-color: var(--orange);
+    margin: 10px 20px;
+    min-width: 250px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.projcard:hover{
+    transform: translateY(-2rem);
+}
+
 .skill-img{
     color: var(--orange);
     font-size: 70px;
+    padding: 10px;
 }
 .skill-details{
-    color: var(--maintextColor);
-    
+    color: var(--maintextColor);  
 }
 .skill-details h3{
  font-family: var(--fonttwo);
@@ -39,6 +64,40 @@ html {
     margin-top: 15px; /* change this to whatever height you want it */
 }
 .skill-details h4{
+    font-family: var(--fontone);
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+.img{
+    color: var(--purple);
+    font-size: 70px;
+    padding: 10px;
+}
+.dets{
+    color: var(--maintextColor);  
+}
+.dets h3{
+ font-family: var(--fontone);
+ font-size: 1.5rem;
+ text-align: center;
+ letter-spacing: 1.3px;
+ font-weight: 200;
+ margin-bottom: 10px;
+}
+.dets p{
+    padding: 10px;
+    font-family: var(--fonttwo);
+}
+.btn{
+    
+}
+
+.dets br {
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+    margin-top: 15px; /* change this to whatever height you want it */
+}
+.dets h4{
     font-family: var(--fontone);
     letter-spacing: 2px;
     font-weight: 200;
@@ -378,7 +437,7 @@ html {
     color: var(--purple);
     border: 1px solid var(--orange);
 }
-.skills
+.skills,.proj-title
 {
     font-family: var(--fontone);
     margin-left: 50px;
@@ -387,7 +446,7 @@ html {
     color: var(--purple);
     text-align: center;
 }
-.skills ex{
+.skills ex,.proj-title ex{
     color: var(--orange);
 }
 .skillContainer{
@@ -416,23 +475,19 @@ div.card:hover{
     transform: translateY(-2rem);
 }
 
-.skills-section ::-webkit-scrollbar {
-    height: 6px;
-    width: auto;
-  }
   
   /* Track */
-  .skills-section ::-webkit-scrollbar-track {
+   ::-webkit-scrollbar-track {
     background: #f1f1f1;
   }
   
   /* Handle */
-  .skills-section ::-webkit-scrollbar-thumb {
+ ::-webkit-scrollbar-thumb {
     background: var(--purple);
   }
   
   /* Handle on hover */
-  .skills-section ::-webkit-scrollbar-thumb:hover {
+  ::-webkit-scrollbar-thumb:hover {
     background: var(--orange);
   }
  /* Buttons */
@@ -459,6 +514,11 @@ div.card:hover{
   ::-webkit-scrollbar-button:horizontal:increment:hover {
     background-color: var(--orange);
   }
+::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+ 
   .arrowholder{
     width: 80px;
     height:80px;
