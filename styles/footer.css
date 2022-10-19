@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Staatliches&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+:root{
+   --mainbg : #f00;
+   --maintextColor: #fcfcff;
+   --blackcolor:#010101;
+   --orange:#F68E46;
+   --fontone:'Staatliches', cursive;
+   --fonttwo:'PT Sans Narrow', sans-serif;;
+   --purple:#240046;
+}
+footer{
+    width: 100%;
+    height: 120px;
+    background-color: var(--purple);
+    margin-top: 50px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.links{
+    width: fit-content;
+    color: var(--purple);
+    padding: 10px;
+   
+}
+.links i{
+    font-size: 23px;
+    background-color: var(--maintextColor);
+    padding: 15px;
+    border-radius: 20%;
+    margin: 0px 6px;
+    border: 1px solid var(--maintextColor);
+    cursor: pointer;
+}
+.links i:hover{
+    background-color: var(--purple);
+    color: var(--orange);
+    border: 1px solid var(--orange);
+}
+.end{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: var(--orange);
+    font-family: var(--fonttwo);
+}
+.end a{
+    text-decoration: none;
+    margin-left: 6px;
+    
+}
+@media screen and (max-width: 780px)
+  {
+    footer{
+        align-items: center;
+    }
+  }

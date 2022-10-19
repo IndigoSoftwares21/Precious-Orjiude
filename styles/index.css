@@ -218,6 +218,7 @@ html {
     align-items: center;
 }
 .skills-section{
+    margin-bottom: 50px;
     background: var(--maintextColor);
 }
 .Main{
@@ -552,6 +553,10 @@ div.card:hover{
   }
   @media screen and (max-width: 780px)
   {
+    
+    .navBar{
+        backdrop-filter: blur(0);
+    }
     .navBar ul{
         display: none;
     }
@@ -597,3 +602,38 @@ div.card:hover{
         border-radius: 20vw 20vw 0 0;
     }
   }
+.mobilenav{
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.5s;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(5, 0, 8, 0.8);
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: column;
+    color: var(--orange);
+    font-family: var(--fontone);
+    justify-content: center;
+}
+
+.mobilenav i{
+    color: var(--orange);
+    font-size: 40px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    right: 0;
+}
+.mobilenav p {
+    font-size: 35px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.mobilenav p a{
+    text-decoration: none;
+    color: var(--orange);
+}
