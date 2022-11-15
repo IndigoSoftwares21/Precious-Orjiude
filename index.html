@@ -15,25 +15,14 @@
     <link rel="icon" href="images/Logo.png" type="image/l-icon">
 </head>
 <body>
-    
-    <div class="wrapper">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="shadow"></div>
-        <div class="shadow"></div>
-        <div class="shadow"></div>
-        <span>Loading</span>
-    </div>
 
     <div class="mobilenav" id="mobilenav">
         <i class="bi bi-x-lg" onclick="closeMenu()"></i>
         <span class="moblinks">
-            <p> <a href="">Home</a> </p>
-            <p> <a href="">Skills</a> </p>
-            <p> <a href="">Projects</a> </p>
-            <p> <a href="">About</a> </p>
-            <p> <a href="">Contact</a> </p>
+            <p> <a href="#home">Home</a> </p>
+            <p> <a href="#skillsec">Skills</a> </p>
+            <p> <a href="#projsec">Projects</a> </p>
+            <p> <a href="mailto:sullivanorjiude@gmail.com">Contact</a> </p>
           
         </span>
        
@@ -45,21 +34,20 @@
         <i class="bi bi-x-lg" style="display:none;"></i>
     </span>
     <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="#skillsec">Projects</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skillsec">Skills</a></li>
+        <li><a href="#projsec">Projects</a></li>
+        <li><a href="mailto:sullivanorjiude@gmail.com">Contact</a></li>
     </ul>
    </div>
-    <section class="bgMain">
+    <section class="bgMain" id="home">
         <div class="intro">
             
             <img src="images/preciousorjiude.JPG" alt="">
             <p class="introtxt">Hello, I am <a href="">Precious Orjiude</a></p>
             <p class="sub">A Software Developer</p>
             <span class="actionbuttons">
-                 <button class="contact">
+                 <button onclick="location.href='mailto:sullivanorjiude@gmail.com'" class="contact">
                     CONTACT ME
                    <i class="bi bi-telephone-forward"></i>
                 </button>
@@ -523,16 +511,38 @@
    
     <footer>
         <span class="links">
-            <i class="bi bi-github"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-youtube"></i>
-            <i class="bi bi-tiktok"></i>
-            <i class="bi bi-envelope"></i>
+            <i onclick="github()" class="bi bi-github"></i>
+            <i onclick="instagram()" class="bi bi-instagram"></i>
+            <i onclick="youtube()" class="bi bi-youtube"></i>
+            <i onclick="tiktok()" class="bi bi-tiktok"></i>
+            <i onclick="email()" class="bi bi-envelope"></i>
         </span>
         
         <span class="end">
             Made with ❤️ and 🪄 &copy; 2022
         </span>
     </footer>
+    <script defer>
+        function github()
+        {
+            window.open('https://github.com/IndigoSoftwares21', '_blank')
+        }
+        function instagram()
+        {
+            window.open('https://www.instagram.com/preciousorjiude/?hl=en', '_blank')
+        }
+        function youtube()
+        {
+            window.open('https://www.youtube.com/channel/UC6Pjv-Av4_skmzOlj_cNxsg', '_blank')
+        }
+        function tiktok()
+        {
+            window.open('https://www.tiktok.com/@indigocoder', '_blank')
+        }
+        function email()
+        {
+            window.open('mailto:sullivanorjiude@gmail.com', '_blank')
+        }
+    </script>
 </body>
 </html>
