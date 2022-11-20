@@ -42,3 +42,6 @@ function geofinder(){
 function meteo(){
     window.open('https://meteowe.netlify.app/', '_blank')
 }
+function resume(){
+    location.href= 'preciousorjiude_resume.pdf'
+}
