@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content=" Precious Orjiude is a Young and talented programmerwith a passion forprogramming and Technology.">
+    <meta name="description" content=" Precious Orjiude is a Young and talented programmer with a passion for programming and Technology.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -12,11 +12,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>Orjiude</title>
     <script defer src="script.js"></script>
+    <script src="https://embed.cmnd.ai/widget.js"></script>
+   
+
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="icon" href="images/Logo.webp" type="image/l-icon">
 </head>
 <body>
-
+    <script>
+      window.cmndChat("init", {
+        hide_default_launcher: false,
+        custom_launcher_selector: "orjiude-div",
+        chatbot_id: "1",
+        organization_id: 1,
+        style: {
+            
+        },
+      });
+    </script>
     <div class="mobilenav" id="mobilenav">
         <i class="bi bi-x-lg" onclick="closeMenu()"></i>
         <span class="moblinks">
@@ -24,7 +37,6 @@
             <p onclick="closeMenu()"> <a href="#skillsec">Skills</a> </p>
             <p onclick="closeMenu()"> <a href="#projsec">Projects</a> </p>
             <p onclick="closeMenu()"> <a href="mailto:sullivanorjiude@gmail.com">Contact</a> </p>
-          
         </span>
        
     </div>
@@ -48,11 +60,11 @@
             <p class="introtxt">Hello, I am <a href="">Precious Orjiude</a></p>
             <p class="sub">A Software Developer</p>
             <span class="actionbuttons">
-                 <button onclick="location.href='mailto:sullivanorjiude@gmail.com'" class="contact">
+                 <button onclick=" cmndChat('show')" class="contact">
                     CONTACT ME
                    <i class="bi bi-telephone-forward"></i>
                 </button>
-                <button onclick="resume()" class="resume">DOWLOAD RESUME
+                <button onclick="cmndChat('hide')" class="resume">DOWLOAD RESUME
                     <i class="bi bi-download"></i>
                 </button>
             </span>
@@ -206,7 +218,7 @@
                </div>
                </span>
                <br>
-               <span id="buildbox">
+               <span id="buildbox">  
                 <h4>BUILDBOX</h4>
                <div class="pbar">
                 <div class="pbarlevel buildbox">
